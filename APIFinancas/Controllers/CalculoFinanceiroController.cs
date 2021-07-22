@@ -30,8 +30,6 @@ namespace APIFinancas.Controllers
                $"Número de meses: {numMeses}|" +
                $"% Taxa de Juros: {percTaxa}");
 
-            // FIXME: Código comentado para simulação de falhas em testes automatizados
-            /*
             if (valorEmprestimo <= 0)
                 return GerarResultParamInvalido("Valor do Empréstimo");
 
@@ -39,7 +37,7 @@ namespace APIFinancas.Controllers
                 return GerarResultParamInvalido("Número de Meses");
 
             if (percTaxa <= 0)
-                return GerarResultParamInvalido("Percentual da Taxa de Juros");*/
+                return GerarResultParamInvalido("Percentual da Taxa de Juros");
 
             double valorFinalJuros =
                 CalculoFinanceiro.CalcularValorComJurosCompostos(
